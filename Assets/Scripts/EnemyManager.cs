@@ -13,7 +13,8 @@ public class EnemyManager : MonoBehaviour
     {
         count += Time.deltaTime;
 
-        SpawnEnemies();
+        Invoke("SpawnEnemies", 4);
+        //SpawnEnemies();
     }
 
     void SpawnEnemies()
